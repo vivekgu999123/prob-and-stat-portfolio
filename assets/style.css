@@ -1,0 +1,212 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base Layout ===== */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+/* ===== Header / Hero ===== */
+.hero {
+  background: linear-gradient(135deg, #0b3c5d, #123e5f);
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ===== Student Info ===== */
+.student-info {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.student-info span {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* ===== Navigation ===== */
+.nav {
+  background: #ffffff;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0b3c5d;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #1d6fa5;
+}
+
+/* ===== Page Container ===== */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ===== Headings ===== */
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #0b3c5d;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+/* ===== Paragraphs ===== */
+p {
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+/* ===== Cards (Modules etc.) ===== */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #0b3c5d;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card span {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ===== Lists ===== */
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* ===== Tables (Profile) ===== */
+.profile-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.profile-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.profile-table td:first-child {
+  font-weight: 600;
+  background: #f9fafb;
+  width: 40%;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #0b3c5d;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px;
+  font-size: 0.85rem;
+  margin-top: 40px;
+}
+/* ===== Back Button ===== */
+.back-wrapper {
+  max-width: 1000px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+}
+
+.back-btn {
+  background: transparent;
+  border: 1px solid #0b3c5d;
+  color: #0b3c5d;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #0b3c5d;
+  color: #ffffff;
+}
+/* ===== Accordion (Chapters Page) ===== */
+.accordion-item {
+  margin-bottom: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  background: #0b3c5d;
+  color: white;
+  padding: 14px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background: #134b70;
+}
+
+.accordion-body {
+  display: none;
+  background: #ffffff;
+  padding: 18px;
+}
+
+.accordion-body h4 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  color: #0b3c5d;
+}

@@ -1,0 +1,138 @@
+<link rel="stylesheet" href="assets/style.css">
+<div class="back-wrapper">
+  <button class="back-btn" onclick="history.back()">← Back</button>
+</div>
+
+<h2>Laboratory Work & Experiments</h2>
+
+<ul>
+  <li>Data handling and cleaning using Python</li>
+  <li>Histogram and boxplot visualization</li>
+  <li>Binomial, Poisson, and Normal distributions</li>
+  <li>Hypothesis testing for means and proportions</li>
+</ul>
+
+<p>
+Experiments were performed using datasets such as
+<em>Lungdata.csv</em>
+</p>
+ <h3>Experiment 1: Data Visualization</h3>
+  <p><strong>Objective:</strong> To visualize data using histogram and boxplot.</p>
+
+  <pre><code>
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv("Lungdata.csv")
+
+plt.hist(data['Age'], bins=10)
+plt.xlabel("Age")
+plt.ylabel("Frequency")
+plt.title("Histogram of Age")
+plt.show()
+
+plt.boxplot(data['LungCap'])
+plt.title("Boxplot of Lung Capacity")
+plt.show()
+  </code></pre>
+    <!-- LAB 2 -->
+  <h3>Experiment 2: Measures of Central Tendency and Dispersion</h3>
+  <p><strong>Objective:</strong> To compute mean, variance and standard deviation.</p>
+
+  <pre><code>
+import numpy as np
+
+data = [12, 15, 18, 20, 22, 25]
+
+mean = np.mean(data)
+variance = np.var(data)
+std_dev = np.std(data)
+
+print("Mean:", mean)
+print("Variance:", variance)
+print("Standard Deviation:", std_dev)
+  </code></pre>
+   <!-- LAB 3 -->
+  <h3>Experiment 3: Binomial Distribution</h3>
+  <p><strong>Objective:</strong> To compute probability using Binomial distribution.</p>
+
+  <pre><code>
+from scipy.stats import binom
+
+n = 10
+p = 0.5
+
+probability = binom.pmf(4, n, p)
+print("Probability:", probability)
+  </code></pre>
+  
+  <!-- LAB 4 -->
+  <h3>Experiment 4: Poisson Distribution</h3>
+  <p><strong>Objective:</strong> To compute probability using Poisson distribution.</p>
+
+  <pre><code>
+from scipy.stats import poisson
+
+lam = 3
+
+probability = poisson.pmf(2, lam)
+print("Probability:", probability)
+  </code></pre>
+
+  <!-- LAB 5 -->
+  <h3>Experiment 5: Normal Distribution</h3>
+  <p><strong>Objective:</strong> To find probability using Normal distribution.</p>
+
+  <pre><code>
+from scipy.stats import norm
+
+mean = 50
+std = 5
+
+probability = norm.cdf(55, mean, std)
+print("Probability:", probability)
+  </code></pre>
+   <!-- LAB 6 -->
+  <h3>Experiment 6: Z-Test for Mean</h3>
+  <p><strong>Objective:</strong> To test hypothesis about population mean.</p>
+
+  <pre><code>
+from scipy.stats import norm
+import math
+
+x_bar = 52
+mu = 50
+sigma = 4
+n = 36
+
+z = (x_bar - mu) / (sigma / math.sqrt(n))
+p_value = 1 - norm.cdf(z)
+
+print("Z-value:", z)
+print("P-value:", p_value)
+  </code></pre>
+   <!-- LAB 7 -->
+  <h3>Experiment 7: t-Test for Difference of Means</h3>
+  <p><strong>Objective:</strong> To test difference between two sample means.</p>
+
+  <pre><code>
+from scipy.stats import ttest_ind
+
+group1 = [12, 14, 15, 16, 18]
+group2 = [10, 11, 13, 14, 15]
+
+t_stat, p_val = ttest_ind(group1, group2)
+
+print("t-statistic:", t_stat)
+print("p-value:", p_val)
+  </code></pre>
+
+</div>
+
+<footer>
+  <p>
+    Vivek Gudi · USN: 01FE25BCS719 · Semester III ·
+    Computer Science · KLE Technological University
+  </p>
+</footer>
+
